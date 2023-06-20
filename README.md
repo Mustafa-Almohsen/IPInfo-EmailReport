@@ -27,6 +27,23 @@ Usage:
 
 If you turn off Windows Defender, you can run the script without Administrator Privilege. 
 windows defender block the script from working properly.
-Contributions and feedback are welcome!
-If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+If you would like to convert this powershell script to executable do the following : 
+   1. Open PowerShell as Administrator:
+      Right-click on the PowerShell icon and select "Run as Administrator."
+
+   2. Install the ps2exe Module:
+   Run this command: Install-Module -Name ps2exe -Force
+   
+   Ensure that the module is successfully installed by running the following command:Get-Module -Listavailable
+look if PS2EXE module there.
+
+Now we Convert the Script to Executable: 
+ps2exe "C:\Path\to\your\script.ps1" "C:\Path\to\your\executable-Script.exe"
+
+Replace the input script path with the actual path to your PowerShell script and specify the desired output path for the executable.
+
+Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+
  
